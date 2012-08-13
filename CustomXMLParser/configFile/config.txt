@@ -1,0 +1,8 @@
+CBC Top Stories<!DELIMTER!>http://rss.cbc.ca/lineup/world.xml <!DELIMTER!>NO ICON
+CBC World News<!DELIMTER!>http://news.gc.ca/web/rss-eng.do?mthd=ntnl <!DELIMTER!>  
+Globe and Mail - Travel <!DELIMTER!>http://www.theglobeandmail.com/life/travel/?service=rss <!DELIMTER!>  
+Kitchener's Weather <!DELIMTER!>http://rss.theweathernetwork.com/weather/caon0356 <!DELIMTER!>  
+Canadian Food Safety News <!DELIMTER!>http://www.phac-aspc.gc.ca/rss/food-safety.xml <!DELIMTER!>  
+Technology Breakthroughs by Forbes<!DELIMTER!>http://www.forbes.com/breakthroughs/index.xml <!DELIMTER!>http://upload.wikimedia.org/wikipedia/commons/b/b2/Happy_icon-16x16.gif
+BAD URL TEST<!DELIMTER!>aewfoanefo;hao;wefhh<!DELIMTER!>NO ICON
+Engadget<!DELIMTER!>http://engadget.com/rss.xml<!DELIMTER!>
