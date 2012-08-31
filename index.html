@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>A.little.code.customxmlp by tkurian</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>A.little.code.customxmlp</h1>
+        <h2></h2>
+        <a href="https://github.com/tkurian/A.Little.Code.CustomXMLParser" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>CUSTOM XML PARSER</h1>
+
+<p>This is a neat application that will take in XML files, parse them and create a way for the user to view all feeds which are of interest to them in one place! </p>
+
+<h2>High-Level Description</h2>
+
+<p>This application consists of 6 different packages. These packages are as follows:</p>
+
+<h3>1. management</h3>
+
+<p>The management package consists of 1 file. This file is as follows:</p>
+
+<h5>UIManager.java</h5>
+
+<p>This file will determine which OS you are running and launch a either a Windows GUI or a linux terminal in order to run the aplication.</p>
+
+<hr><h3>2. linux</h3>
+
+<p>The linux package consists of 1 file. This file is as follows:</p>
+
+<h5>LinuxConsole.java</h5>
+
+<p>This file manages the user interface for the lin.x version.</p>
+
+<hr><h3>3. windows</h3>
+
+<p>The windows package consists of 8 files. These file is as follows:</p>
+
+<h5>WindowsGUI.java</h5>
+
+<p>This file manages the graphical user interface for the Custo.XMLParser.</p>
+
+<h5>FeedListListener.java</h5>
+
+<p>This file handles the mouse events for the Feed list from the .indowsGUI.</p>
+
+<h5>ItemHtmlDisplay.java</h5>
+
+<p>This file creates a display string for displaying a RSS item to the screen. It also creates a CSS style that can be added to an element being added to a J.ditorPane.</p>
+
+<h5>ItemListListener.java</h5>
+
+<p>This file is the listener for the item list</p>
+
+<h5>RssFeedListCellRenderer.java</h5>
+
+<p>This file is used for displaying a feed list on .he screen.</p>
+
+<h5>RssFeedListModel.java</h5>
+
+<p>This file handles linking data between the RSS feed and the f.edManager.</p>
+
+<h5>RssItemListCellRenderer.java</h5>
+
+<p>This file is used for displaying the RSS items on.the JList.</p>
+
+<h5>RssItemListModel.java</h5>
+
+<p>This class links channel data to a JList display.</p>
+
+<hr><h3>4. utilities</h3>
+
+<h5>FileIO.java</h5>
+
+<p>This file will handle reading in the RSS feed/XML file. It will return back the contents of the xml file within a string.</p>
+
+<h5>RssFeed.java</h5>
+
+<p>This file handles loading the XML file into a string and setting the feed name, feed url and icon url. It also consists of getter methods in order for easy retrieval of the feed name, feed url and icon url.</p>
+
+<h5>RssFeedManager.java</h5>
+
+<p>This file handles the config file, adding feeds, removing feeds. The config file enables us to pre-load a few XMLs into our XMLParser. This means upon loading, some feeds will pre-exist (without the user having to add them). Hence, this file consists of methods to update the config file.</p>
+
+<h5>XMLParser.java</h5>
+
+<p>This file manages parsing the XML file/RSS feed. It will then populate the database. This requires parsing channels, images, items and attributes. </p>
+
+<h5>XMLValidation.java</h5>
+
+<p>This file consists of some very basic validation tests. We test to see if the version is 2.0 and we check to ensure that the RSS pattern is correct (ie. no missing tags!)</p>
+
+<hr><h3>5. database</h3>
+
+<p>The database was designed to hold a list of channels. Each channel would consist of items and images. To facilitate this design, the database package had to consist of 4 different files. These files include the following:</p>
+
+<h5>DBase.java</h5>
+
+<p>This file is for handling the databaseList. The databaseList consists of channels. Hence it contains methods to add channels, remove channels, count the number of channels, get a specific channel, get the full list of channels or get a channel based on it's attributes (attribute name &amp; value). </p>
+
+<h5>Channel.java</h5>
+
+<p>This file is for handling the channelList. The channel list consists of both images and items. </p>
+
+<h5>Item.java</h5>
+
+<p>This file is for creating Item objects that will be stored within the channelList. </p>
+
+<h5>Image.java</h5>
+
+<p>This file is for handling any images that need to be added to the channelList.</p>
+
+<hr><h3>6. test</h3>
+
+<p>The testpackage consists of 1 file. This file is as follows:</p>
+
+<h5>ConsoleTestHarness.java</h5>
+
+<p>This file was used in order to test the methods being created, in order to ensure that they were functioning as intended.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/tkurian/A.Little.Code.CustomXMLParser/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/tkurian/A.Little.Code.CustomXMLParser/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/tkurian/A.Little.Code.CustomXMLParser"></a> is maintained by <a href="https://github.com/tkurian">tkurian</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
